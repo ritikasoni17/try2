@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: var(--bg-lighter, #fffdf9);
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.chatbot {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 80vh; /* Adjust as needed */
+    margin: 20px;
+}
+.arrow{
+    padding: 15px;
+}
+.arrow-btn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.arrow-btn:hover {
+    color: #000;
+}
+
+.arrow-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    transform: rotate(90deg);
+}
+
+
+header {
+    background-color: #33b75f; /* Adjust to a color matching your theme */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+header .left {
+    display: flex;
+    align-items: center;
+}
+
+.header-bot-icon {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-data h1 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.left-data p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column; /* Stack messages vertically */
+    gap: 15px; /* Space between messages */
+}
+
+.main-bot-icon {
+    background-color: #f1f1f1; /* Adjust to a color matching your theme */
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start; /* Align bot icon to the start */
+}
+
+.main-text {
+    background-color: #e9e9eb; /* Light background for bot messages */
+    padding: 12px;
+    border-radius: 8px;
+    max-width: 80%; /* Limit message width */
+    align-self: flex-start; /* Align bot messages to the start */
+    margin-left: 15px; /* Space from the icon */
+}
+
+.main-text p:first-child {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.main-text p:last-child {
+    margin: 0;
+    font-size: 0.7rem;
+    color: #666;
+    text-align: right;
+}
+
+/* Add styles for user messages later */
+
+footer {
+    padding: 20px;
+    border-top: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+}
+
+.footer-div {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.footer-div textarea {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Disable textarea resizing */
+    font-size: 1rem;
+    min-height: 40px;
+    max-height: 150px; /* Limit height */
+    overflow-y: auto;
+}
+
+.aeroplane {
+    background-color: #33b75f; /* Adjust to a color matching your theme */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.aeroplane:hover {
+    background-color: #2e9d54; /* Darker shade on hover */
+}
+
+.aeroplane img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.footer-buttons button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.footer-buttons button:hover {
+    background-color: #e0e0e0;
+    border-color: #b0b0b0;
+}
+
+.footer-buttons img {
+    width: 16px;
+    height: 16px;
+}

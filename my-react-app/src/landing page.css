@@ -1,0 +1,620 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #d9e4dd; /* Light green background */
+  color: #333; /* Dark grey text */
+  line-height: 1.6;
+}
+
+#main-content.blurred {
+  filter: blur(5px);
+  pointer-events: none; /* Disable interactions with blurred content */
+}
+
+/* Header Styles */
+.site-header {
+  background-color: #2d3d2f; /* Dark green header */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px; /* Adjust based on your logo size */
+  margin-right: 10px;
+}
+
+.site-title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #a2d9af; /* Lighter green on hover */
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #d9e4dd, #c8d5ce); /* Gradient background */
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-ring {
+  position: absolute;
+  top: -50px; /* Adjust as needed */
+  left: -50px; /* Adjust as needed */
+  width: 200px; /* Size of the ring */
+  height: 200px; /* Size of the ring */
+  background-color: rgba(162, 217, 175, 0.3); /* Lighter green with opacity */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1; /* Behind content */
+}
+
+.logo-ring img {
+  width: 80px; /* Size of the logo inside the ring */
+  opacity: 0.5;
+}
+
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #2d3d2f;
+}
+
+.hero .subtitle {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.hero-buttons {
+  margin-bottom: 40px;
+}
+
+.btn {
+  padding: 12px 25px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn i {
+  margin-right: 8px;
+}
+
+.btn.orange {
+  background-color: #f08b3c; /* Orange */
+  color: white;
+}
+
+.btn.orange:hover {
+  background-color: #e07b2c; /* Darker orange */
+}
+
+.btn.white {
+  background-color: white;
+  color: #2d3d2f;
+  border: 2px solid #2d3d2f;
+}
+
+.btn.white:hover {
+  background-color: #f0f0f0;
+}
+
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats .highlight {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #2d3d2f;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Doshas Section */
+.doshas {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #a2d9af; /* Lighter green background */
+}
+
+.doshas h2 {
+  color: #2d3d2f;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.dosha-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  margin-top: 10px;
+  color: #2d3d2f;
+}
+
+.card p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.card span {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.emoji {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+/* Journey Section */
+.journey {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #d9e4dd;
+}
+
+.journey h2 {
+  color: #2d3d2f;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.journey-steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.step {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.step .icon {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #f08b3c; /* Orange color for icons */
+}
+
+.icon-brain,
+.icon-heart,
+.icon-msg,
+.icon-cal {
+  stroke-width: 2.5; /* Adjust stroke thickness if needed */
+}
+
+.step h4 {
+  color: #2d3d2f;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.step p {
+  color: #555;
+  font-size: 0.95em;
+}
+
+/* CTA Section */
+.cta {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #2d3d2f; /* Dark green background */
+  color: white;
+}
+
+.cta h3 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #c8d5ce;
+}
+
+.btn1 {
+  padding: 15px 30px;
+  background-color: #f08b3c; /* Orange */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn1 i {
+  margin-right: 8px;
+}
+
+.btn1:hover {
+  background-color: #e07b2c; /* Darker orange */
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #2d3d2f;
+  color: white;
+  padding: 40px 20px;
+  font-size: 0.9em;
+}
+
+footer h2 {
+  margin-bottom: 15px;
+  font-size: 1.6em;
+}
+
+footer h3 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  border-bottom: 2px solid #f08b3c; /* Orange underline */
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+footer p {
+  margin-bottom: 10px;
+  color: #c8d5ce;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f08b3c; /* Orange on hover */
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer .flogo {
+  height: 30px;
+  vertical-align: middle;
+}
+
+footer .ficon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+footer .ficon i {
+  margin-right: 10px;
+  font-size: 1.1em;
+  color: #f08b3c; /* Orange for icons */
+}
+
+footer .social a {
+  font-size: 1.5em;
+  margin-right: 15px;
+}
+
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.signin-modal,
+.signup-modal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.close-btn:hover {
+  color: #777;
+}
+
+.signin-modal h2,
+.signup-modal h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2d3d2f;
+}
+
+.input-with-icon {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-with-icon input {
+  width: 100%;
+  padding: 10px 10px 10px 40px; /* Add padding for icon */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.input-with-icon .input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+}
+
+.password-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.password-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  padding-right: 40px; /* Space for toggle button */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+}
+
+.toggle-password i {
+  font-size: 1.1em;
+}
+
+.checkbox-container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container input {
+  margin-right: 10px;
+}
+
+.signin-modal button,
+.signup-modal button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f08b3c; /* Orange */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signin-modal button:hover,
+.signup-modal button:hover {
+  background-color: #e07b2c; /* Darker orange */
+}
+
+.signup-modal button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+
+.modal-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.modal-footer p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.modal-footer a {
+  color: #2d3d2f; /* Dark green */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.modal-footer a:hover {
+  text-decoration: underline;
+}
+
+.password-error {
+    color: red;
+    font-size: 0.85em;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    display: none; /* Hidden by default */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    margin-top: 15px;
+  }
+
+  .nav-links a {
+    margin: 0 10px;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero .subtitle {
+    font-size: 1em;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    margin: 10px 0;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .dosha-cards,
+  .journey-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .step {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .cta h3 {
+    font-size: 1.5em;
+  }
+
+  .cta p {
+    font-size: 1em;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .footer-section {
+    margin-bottom: 30px;
+  }
+
+  footer .links ul {
+      padding-left: 0;
+  }
+
+  footer .social a {
+    margin: 0 10px;
+  }
+}
